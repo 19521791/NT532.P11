@@ -126,7 +126,7 @@ void loop() {
   duration = pulseIn(echoPin, HIGH);
 
   // Calculate distance in cm
-  distance = duration * 0.034 / 2;
+  distance = (duration / 2) / 29.1;
 
   Serial.print("Distance: ");
   Serial.println(distance);
